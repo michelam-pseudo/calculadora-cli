@@ -13,15 +13,15 @@ rl.question("Olá! Bem-vindo à calculadora de terminal! Digite a operação ari
 				
 				case '+':
 					
-					rl.question("\nDigite os números da soma.\n", (res) => {console.log(res); somar(res); rl.close(); } )
+					rl.question("\nDigite os números da soma seperados por vírgula.\n", (res) => {console.log(res); somar(res); rl.close(); } )
 				case '-':
-					rl.question("\nDigite os números da subtração.\n", (res) => {console.log(res); subtrair(res); rl.close(); } )
+					rl.question("\nDigite os números da subtração separados por vírgula.\n", (res) => {console.log(res); subtrair(res); rl.close(); } )
 				
 				case '/':
-					rl.question("\nDigite os números da divisão.\n", (res) => {console.log(res); dividir(res); rl.close(); } )
+					rl.question("\nDigite os números da divisão separados por vírgula.\n", (res) => {console.log(res); dividir(res); rl.close(); } )
 				
 				case '**':
-					 rl.question("\nDigite os números da exponenciação.\n", (res) => {console.log(res); exponenciar(res); rl.close(); } )				
+					 rl.question("\nDigite os números da exponenciação seperados por vírgula.\n", (res) => {console.log(res); exponenciar(res); rl.close(); } )				
 
 			}
 			

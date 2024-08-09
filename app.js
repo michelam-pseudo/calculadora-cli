@@ -15,6 +15,7 @@ rl.question("Olá! Bem-vindo à calculadora de terminal! Digite a operação ari
 			}
 			
 		
-		})
+		}
+)
 
 

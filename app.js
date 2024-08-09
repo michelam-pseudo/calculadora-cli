@@ -10,7 +10,7 @@ rl.question("Olá! Bem-vindo à calculadora de terminal! Digite a operação ari
 				
 				case '1':
 					
-					rl.question("\nDigite os números a serem somados.\n", (res) => {console.log(res);somar(eval(res)); rl.close();})
+					rl.question("\nDigite os números a serem somados.\n", (res) => {console.log(res); somar(res); rl.close(); } )
 
 			}
 			

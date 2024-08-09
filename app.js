@@ -2,16 +2,20 @@ const readline = require('readline');
 const {stdin:input, stdout:output} = require('process');
 const rl = readline.createInterface({input, output});
 const somar = require('./operacoesAritmeticas/somar.js');
+const subtrair = require('./operacoesAritmeticas/subtrair.js');
 
-rl.question("Olá! Bem-vindo à calculadora de terminal! Digite a operação aritmética desejada:\n1 - Soma\n", 
+
+rl.question("Olá! Bem-vindo à calculadora de terminal! Digite a operação aritmética desejada:\n+ para soma\n- para subtração\n* para multiplicação\n/ para divisão\n** para exponenciação\n", 
 		(resposta) => {
 
 			switch(resposta) {
 				
-				case '1':
+				case '+':
 					
 					rl.question("\nDigite os números a serem somados.\n", (res) => {console.log(res); somar(res); rl.close(); } )
-
+				case '-':
+					rl.question("\nDigite os números a serem subtraídos.\n", (res) => {console.log(res); subtrair(res); rl.close(); } )
+					
 			}
 			
 		
